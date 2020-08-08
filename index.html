@@ -5,6 +5,29 @@
     <title>Title</title>
 </head>
 <body>
+<section>
+    <div class="hi" id="text">
+        helo
+    </div>
+    <input type="text" id="userInput">
+    <button id="myBtn">Enter</button>
+</section>
 
 </body>
+<script>
+    let text = document.getElementById("text");
+    let input = document.getElementById("userInput");
+    let btn = document.getElementById("myBtn");
+
+    btn.onclick = function () {
+
+            if(input.value.length === 0){
+                alert("fill it please");
+                return 0;
+            }
+
+        text.innerText = input.value;
+
+    }
+</script>
 </html>
